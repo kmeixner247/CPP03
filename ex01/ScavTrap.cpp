@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:13:56 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 20:34:26 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 09:23:33 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,6 @@ ScavTrap::ScavTrap()
 	std::cout << "\x1B[32m";
 	std::cout << "The incredible ScavTrap ";
 	std::cout << this->_Name << " enters the arena!" << std::endl;
-	std::cout << "\033[0m";
-}
-
-ScavTrap::~ScavTrap()
-{
-	std::cout << "\x1B[32m";
-	std::cout << "ScavTrap " << this->_Name << " says bye bye." << std::endl;
 	std::cout << "\033[0m";
 }
 
@@ -53,6 +46,13 @@ ScavTrap::ScavTrap(ScavTrap const &src)
 	std::cout << "\x1B[32m";
 	std::cout << "The incredible ScavTrap ";
 	std::cout << this->_Name << " enters the arena!" << std::endl;
+	std::cout << "\033[0m";
+}
+
+ScavTrap::~ScavTrap()
+{
+	std::cout << "\x1B[32m";
+	std::cout << "ScavTrap " << this->_Name << " says bye bye." << std::endl;
 	std::cout << "\033[0m";
 }
 
