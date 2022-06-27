@@ -6,12 +6,12 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 19:52:06 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 10:31:37 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 12:01:27 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FragTrap_HPP
-#define FragTrap_HPP
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
 #include <iostream>
 class FragTrap : public ClapTrap {
