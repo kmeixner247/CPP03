@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 20:46:47 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 11:11:39 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 11:57:47 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 #include <iostream>
-class DiamondTrap: public ScavTrap, public FragTrap {
+class DiamondTrap: public FragTrap, public ScavTrap {
 public:
 	DiamondTrap();
 	~DiamondTrap();
 	DiamondTrap(std::string name);
 	DiamondTrap(DiamondTrap const &src);
 	DiamondTrap &operator=(DiamondTrap const &rhs);
-	using ScavTrap::attack;
+	using FragTrap::attack;
 	void whoAmI();
 private:
 	std::string	_Name;

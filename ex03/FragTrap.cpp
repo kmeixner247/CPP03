@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:13:56 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 10:51:58 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 11:59:10 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,22 @@ FragTrap &FragTrap::operator=(FragTrap const &rhs)
 	return (*this);
 }
 
+void FragTrap::attack(const std::string &target)
+{
+	std::cout << "\x1B[33m";
+	if (this->_hp == 0)
+		std::cout << "FragTrap " << this->_Name << " is six feet under, how could it possibly attack " << target << "?" << std::endl;
+	else if (this->_ep == 0)
+		std::cout << "FragTrap " << this->_Name << " needs some coffee before he can attack again!" << std::endl;
+	else
+	{
+		std::cout << "FragTrap " << this->_Name << " headbutts " << target;
+		std::cout << ", causing " << this->_ad << " points of damage!" << std::endl;
+		this->_ep--;
+	}
+	std
+	::cout << "\033[0m";
+}
 void FragTrap::highFivesGuys()
 {
 	std::cout << "\x1B[33m";

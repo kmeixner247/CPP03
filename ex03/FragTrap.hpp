@@ -6,12 +6,12 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 19:52:06 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 10:51:40 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 11:58:18 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FragTrap_HPP
-#define FragTrap_HPP
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
 #include <iostream>
 class FragTrap : virtual public ClapTrap {
@@ -21,6 +21,7 @@ public:
 	FragTrap(std::string name);
 	FragTrap(FragTrap const &src);
 	FragTrap &operator=(FragTrap const &rhs);
+	void	attack(const std::string &target);
 	void	highFivesGuys();
 	void	setHP();
 	void	setEP();
