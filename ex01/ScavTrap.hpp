@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:13:58 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 20:36:27 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 09:09:30 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define SCAVTRAP_HPP
 #include "ClapTrap.hpp"
 #include <iostream>
-class ScavTrap : public ClapTrap {
+class ScavTrap : ClapTrap {
 public:
 	ScavTrap();
 	~ScavTrap();
