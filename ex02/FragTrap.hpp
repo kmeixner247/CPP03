@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 19:52:06 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 20:36:45 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 09:09:50 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define FragTrap_HPP
 #include "ClapTrap.hpp"
 #include <iostream>
-class FragTrap : public ClapTrap {
+class FragTrap : ClapTrap {
 public:
 	FragTrap();
 	~FragTrap();
