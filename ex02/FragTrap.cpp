@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:13:56 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/27 10:31:15 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 10:43:11 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 FragTrap::FragTrap()
 {
-	this->_Name = "William";
 	this->setHP();
 	this->setEP();
 	this->setAD();
