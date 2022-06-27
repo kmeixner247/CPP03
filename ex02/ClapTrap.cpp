@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 11:11:20 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 20:23:05 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 09:23:08 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,17 @@ _Name(name),
 _hp(10),
 _ep(10),
 _ad(0)
+{
+	std::cout << "\x1B[31m";
+	std::cout << "Rejoice, everyone! ClapTrap " << this->_Name << " is here!" << std::endl;
+	std::cout << "\033[0m";
+}
+
+ClapTrap::ClapTrap(ClapTrap const &src) :
+_Name(src._Name),
+_hp(src._hp),
+_ep(src._ep),
+_ad(src._ad)
 {
 	std::cout << "\x1B[31m";
 	std::cout << "Rejoice, everyone! ClapTrap " << this->_Name << " is here!" << std::endl;

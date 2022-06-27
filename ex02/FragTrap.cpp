@@ -6,7 +6,7 @@
 /*   By: kmeixner <konstantin.meixner@freenet.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 13:13:56 by kmeixner          #+#    #+#             */
-/*   Updated: 2022/06/26 20:42:21 by kmeixner         ###   ########.fr       */
+/*   Updated: 2022/06/27 09:24:31 by kmeixner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,6 @@ FragTrap::FragTrap()
 	std::cout << "\033[0m";
 }
 
-FragTrap::~FragTrap()
-{
-	std::cout << "\x1B[33m";
-	std::cout << "FragTrap " << this->_Name << " realizes that it's too cool for this room and flies away." << std::endl;
-	std::cout << "\033[0m";
-}
 
 FragTrap::FragTrap(std::string name)
 {
@@ -52,6 +46,13 @@ FragTrap::FragTrap(FragTrap const &src)
 	std::cout << "\x1B[33m";
 	std::cout << "The FragTrap ";
 	std::cout << this->_Name << " falls from the sky, looking for trouble!" << std::endl;
+	std::cout << "\033[0m";
+}
+
+FragTrap::~FragTrap()
+{
+	std::cout << "\x1B[33m";
+	std::cout << "FragTrap " << this->_Name << " realizes that it's too cool for this room and flies away." << std::endl;
 	std::cout << "\033[0m";
 }
 
